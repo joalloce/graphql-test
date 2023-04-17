@@ -10,6 +10,10 @@ class AlbumsService extends RESTDataSource {
   async getAlbum({ id }) {
     return this.get(`albums/${id}`);
   }
+
+  async getAlbumsByUserId({ userId }) {
+    return this.get(`users/${userId}/albums`);
+  }
 }
 
 export default AlbumsService;

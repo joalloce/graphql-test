@@ -10,6 +10,10 @@ class PostsService extends RESTDataSource {
   async getPost({ id }) {
     return this.get(`posts/${id}`);
   }
+
+  async getPostsByUserId({ userId }) {
+    return this.get(`users/${userId}/posts`);
+  }
 }
 
 export default PostsService;

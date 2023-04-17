@@ -1,11 +1,15 @@
 export { default as album } from "./album";
 export { default as albums } from "./albums";
+export { default as albumsByUserId } from "./albumsByUserId";
 export { default as comment } from "./comment";
 export { default as comments } from "./comments";
+export { default as commentsByPostId } from "./commentsByPostId";
 export { default as photo } from "./photo";
 export { default as photos } from "./photos";
+export { default as photosByAlbumId } from "./photosByAlbumId";
 export { default as post } from "./post";
 export { default as posts } from "./posts";
+export { default as postsByUserId } from "./postsByUserId";
 export { default as todo } from "./todo";
 export { default as todos } from "./todos";
 export { default as todosByUserId } from "./todosByUserId";

@@ -10,6 +10,10 @@ class PhotosService extends RESTDataSource {
   async getPhoto({ id }) {
     return this.get(`photos/${id}`);
   }
+
+  async getPhotosByAlbumId({ albumId }) {
+    return this.get(`albums/${albumId}/photos`);
+  }
 }
 
 export default PhotosService;
