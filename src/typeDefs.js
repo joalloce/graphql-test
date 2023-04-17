@@ -25,6 +25,7 @@ const typeDefs = `#graphql
     url: String!
     thumbnailUrl: String!
   }
+
   type Post {
     id: ID!
     user: User!
@@ -43,6 +44,7 @@ const typeDefs = `#graphql
   type Query {
     todo(id: ID!): Todo!
     todos: [Todo!]!
+    todosByUserId(userId:ID!):[Todo]
     user(id: ID!): User!
     users: [User!]!
     album(id: ID!): Album!

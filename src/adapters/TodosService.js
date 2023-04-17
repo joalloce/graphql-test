@@ -10,6 +10,11 @@ class TodosService extends RESTDataSource {
   async getTodo({ id }) {
     return this.get(`todos/${id}`);
   }
+
+  async getTodosByUserId({ userId }) {
+    console.log(userId);
+    return this.get(`users/${userId}/todos`);
+  }
 }
 
 export default TodosService;
