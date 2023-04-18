@@ -12,7 +12,6 @@ class TodosService extends RESTDataSource {
   }
 
   async getTodosByUserId({ userId }) {
-    console.log(userId);
     return this.get(`users/${userId}/todos`);
   }
 }

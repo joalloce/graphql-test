@@ -12,7 +12,6 @@ class CommentsService extends RESTDataSource {
   }
 
   async getCommentsByPostId({ postId }) {
-    console.log();
     return this.get(`posts/${postId}/comments`);
   }
 }
